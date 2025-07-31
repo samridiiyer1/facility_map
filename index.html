@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_ec9aeeb731dd6bdd2a1a81720343eeb9 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_ec9aeeb731dd6bdd2a1a81720343eeb9" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_ec9aeeb731dd6bdd2a1a81720343eeb9 = L.map(
+                "map_ec9aeeb731dd6bdd2a1a81720343eeb9",
+                {
+                    center: [33.78207167142857, -118.00162724285714],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 10,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_022171ce0d7a88e9c4773050bcc832f2 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_022171ce0d7a88e9c4773050bcc832f2.addTo(map_ec9aeeb731dd6bdd2a1a81720343eeb9);
+        
+    
+            var marker_e6b31e02a387166c32bed545e12ee6e6 = L.marker(
+                [33.7584189, -118.0896728],
+                {
+}
+            ).addTo(map_ec9aeeb731dd6bdd2a1a81720343eeb9);
+        
+    
+            var icon_328dd5790af0746d31f44799b3289224 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "cadetblue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e89895bcc2c038811bc98f50b020de6a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_16ab0fa4e179d04628d90f0eca4f6b1a = $(`<div id="html_16ab0fa4e179d04628d90f0eca4f6b1a" style="width: 100.0%; height: 100.0%;"><b>AIM Sports Plex</b><br>1709 Apollo Ct, Seal Beach, CA 90740, USA</div>`)[0];
+                popup_e89895bcc2c038811bc98f50b020de6a.setContent(html_16ab0fa4e179d04628d90f0eca4f6b1a);
+            
+        
+
+        marker_e6b31e02a387166c32bed545e12ee6e6.bindPopup(popup_e89895bcc2c038811bc98f50b020de6a)
+        ;
+
+        
+    
+    
+            marker_e6b31e02a387166c32bed545e12ee6e6.bindTooltip(
+                `<div>
+                     AIM Sports Plex
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e6b31e02a387166c32bed545e12ee6e6.setIcon(icon_328dd5790af0746d31f44799b3289224);
+            
+    
+            var marker_4a9e07d819095f3176ebe7bf27230e78 = L.marker(
+                [33.7803191, -118.0015259],
+                {
+}
+            ).addTo(map_ec9aeeb731dd6bdd2a1a81720343eeb9);
+        
+    
+            var icon_b7a59ed19043851690be2d6c031e193f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "cadetblue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8e035ad6ee844af7be6bc46e0f3bc6ba = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b923b0951f82d88b3c08f1fdbdea4ba2 = $(`<div id="html_b923b0951f82d88b3c08f1fdbdea4ba2" style="width: 100.0%; height: 100.0%;"><b>The MAP</b><br>12552 Western Ave, Garden Grove, CA 92840, USA</div>`)[0];
+                popup_8e035ad6ee844af7be6bc46e0f3bc6ba.setContent(html_b923b0951f82d88b3c08f1fdbdea4ba2);
+            
+        
+
+        marker_4a9e07d819095f3176ebe7bf27230e78.bindPopup(popup_8e035ad6ee844af7be6bc46e0f3bc6ba)
+        ;
+
+        
+    
+    
+            marker_4a9e07d819095f3176ebe7bf27230e78.bindTooltip(
+                `<div>
+                     The MAP
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_4a9e07d819095f3176ebe7bf27230e78.setIcon(icon_b7a59ed19043851690be2d6c031e193f);
+            
+    
+            var marker_dacb468277268e32b4839fb345155e61 = L.marker(
+                [33.7141977, -117.8027961],
+                {
+}
+            ).addTo(map_ec9aeeb731dd6bdd2a1a81720343eeb9);
+        
+    
+            var icon_f5efdc42721f493da63c41d58770fe31 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "cadetblue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9238a1a97156d1231b482e455ea78afc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7b771abed9e262b42843933d52929ffd = $(`<div id="html_7b771abed9e262b42843933d52929ffd" style="width: 100.0%; height: 100.0%;"><b>Momentus Sports Center</b><br>14522 Myford Rd, Irvine, CA 92602, USA</div>`)[0];
+                popup_9238a1a97156d1231b482e455ea78afc.setContent(html_7b771abed9e262b42843933d52929ffd);
+            
+        
+
+        marker_dacb468277268e32b4839fb345155e61.bindPopup(popup_9238a1a97156d1231b482e455ea78afc)
+        ;
+
+        
+    
+    
+            marker_dacb468277268e32b4839fb345155e61.bindTooltip(
+                `<div>
+                     Momentus Sports Center
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_dacb468277268e32b4839fb345155e61.setIcon(icon_f5efdc42721f493da63c41d58770fe31);
+            
+    
+            var marker_bef39384baf17e943bf38f45719ab380 = L.marker(
+                [33.5578158, -117.6273591],
+                {
+}
+            ).addTo(map_ec9aeeb731dd6bdd2a1a81720343eeb9);
+        
+    
+            var icon_f5f4f90c945670a3239ecd622567717f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "cadetblue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_12b095910ac27ada0e148e62eeb45c9a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_51e9fa44c0064645e7442d91132209d4 = $(`<div id="html_51e9fa44c0064645e7442d91132209d4" style="width: 100.0%; height: 100.0%;"><b>Open Gym Premier: Ladera Ranch</b><br>2 Terrace Road, Ladera Ranch, CA 92694, USA</div>`)[0];
+                popup_12b095910ac27ada0e148e62eeb45c9a.setContent(html_51e9fa44c0064645e7442d91132209d4);
+            
+        
+
+        marker_bef39384baf17e943bf38f45719ab380.bindPopup(popup_12b095910ac27ada0e148e62eeb45c9a)
+        ;
+
+        
+    
+    
+            marker_bef39384baf17e943bf38f45719ab380.bindTooltip(
+                `<div>
+                     Open Gym Premier: Ladera Ranch
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_bef39384baf17e943bf38f45719ab380.setIcon(icon_f5f4f90c945670a3239ecd622567717f);
+            
+    
+            var marker_f261541a8938eb4a173663291cb8388a = L.marker(
+                [33.8096116, -117.9046834],
+                {
+}
+            ).addTo(map_ec9aeeb731dd6bdd2a1a81720343eeb9);
+        
+    
+            var icon_ce13bf5c24ad0072841af5603f3134e8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "cadetblue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c5787d885dacc59a524a7b3f9d67a17c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_13b2aa9f8069b6b6ecb35eb47e5ca61c = $(`<div id="html_13b2aa9f8069b6b6ecb35eb47e5ca61c" style="width: 100.0%; height: 100.0%;"><b>Open Gym Premier: Anaheim</b><br>1500 S Anaheim Blvd, Anaheim, CA 92805, USA</div>`)[0];
+                popup_c5787d885dacc59a524a7b3f9d67a17c.setContent(html_13b2aa9f8069b6b6ecb35eb47e5ca61c);
+            
+        
+
+        marker_f261541a8938eb4a173663291cb8388a.bindPopup(popup_c5787d885dacc59a524a7b3f9d67a17c)
+        ;
+
+        
+    
+    
+            marker_f261541a8938eb4a173663291cb8388a.bindTooltip(
+                `<div>
+                     Open Gym Premier: Anaheim
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f261541a8938eb4a173663291cb8388a.setIcon(icon_ce13bf5c24ad0072841af5603f3134e8);
+            
+    
+            var marker_8812081e6d56848ca16ae085b444bac9 = L.marker(
+                [34.1864509, -118.9253277],
+                {
+}
+            ).addTo(map_ec9aeeb731dd6bdd2a1a81720343eeb9);
+        
+    
+            var icon_49061a035a685e3ac0858139001ac97a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "cadetblue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3ad5f87800750a0a00b0a311dad0870e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f35f12cb854ce6884bcb3431c0a3f0f7 = $(`<div id="html_f35f12cb854ce6884bcb3431c0a3f0f7" style="width: 100.0%; height: 100.0%;"><b>Sports Academy: Thousand Oaks</b><br>1011 Rancho Conejo Blvd, Newbury Park, CA 91320, USA</div>`)[0];
+                popup_3ad5f87800750a0a00b0a311dad0870e.setContent(html_f35f12cb854ce6884bcb3431c0a3f0f7);
+            
+        
+
+        marker_8812081e6d56848ca16ae085b444bac9.bindPopup(popup_3ad5f87800750a0a00b0a311dad0870e)
+        ;
+
+        
+    
+    
+            marker_8812081e6d56848ca16ae085b444bac9.bindTooltip(
+                `<div>
+                     Sports Academy: Thousand Oaks
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_8812081e6d56848ca16ae085b444bac9.setIcon(icon_49061a035a685e3ac0858139001ac97a);
+            
+    
+            var marker_386201145dfeb0adbdb57cb67ac92608 = L.marker(
+                [33.6676877, -117.6600257],
+                {
+}
+            ).addTo(map_ec9aeeb731dd6bdd2a1a81720343eeb9);
+        
+    
+            var icon_4cd9d2bf93532c6790c14913ce55b9a7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "cadetblue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a812a7255cb870c9c0a64e66afe7dca2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4930a57bd00f537349ce40143c73968b = $(`<div id="html_4930a57bd00f537349ce40143c73968b" style="width: 100.0%; height: 100.0%;"><b>Clava Sports Facility</b><br>26923 Fuerte Dr, Lake Forest, CA 92630, USA</div>`)[0];
+                popup_a812a7255cb870c9c0a64e66afe7dca2.setContent(html_4930a57bd00f537349ce40143c73968b);
+            
+        
+
+        marker_386201145dfeb0adbdb57cb67ac92608.bindPopup(popup_a812a7255cb870c9c0a64e66afe7dca2)
+        ;
+
+        
+    
+    
+            marker_386201145dfeb0adbdb57cb67ac92608.bindTooltip(
+                `<div>
+                     Clava Sports Facility
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_386201145dfeb0adbdb57cb67ac92608.setIcon(icon_4cd9d2bf93532c6790c14913ce55b9a7);
+            
+</script>
+</html>
